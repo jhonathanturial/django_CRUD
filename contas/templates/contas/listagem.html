@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem</title>
+</head>
+<body>
+    <h1>Listagem</h1>
+    {%for transacao in data.transacoes%}
+    <ul>
+        <li> {{ transacao.descricao }} - {{transacao.valor}} - {{transacao.descricao}} - {{transacao.data}}</li>
+    </ul>    
+    {%endfor%}
+</body>
+</html>
